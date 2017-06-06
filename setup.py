@@ -9,6 +9,7 @@ setup(
     		"domain_database.csv",
     	],
     },
+    include_package_data = True,
     url='',
     license='MIT',
     author='Michał Zezyk',
