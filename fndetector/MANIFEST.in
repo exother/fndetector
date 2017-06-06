@@ -1,1 +1,1 @@
-include resources/*.csv
+recursive-include resources *
