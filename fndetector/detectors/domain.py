@@ -15,7 +15,7 @@ class DomainDetector:
 
     def check(self):
         domain_database = {}
-        database_path = os.path.abspath(resource_filename('fndetector.data', 'domain_database.csv'))
+        database_path = os.path.abspath(resource_filename('fndetector.resources', 'domain_database.csv'))
         with open('resources/domain_database.csv', newline='') as csvfile:
             dbreader = csv.reader(csvfile, delimiter=',')
             for row in dbreader:
