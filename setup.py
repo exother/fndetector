@@ -3,7 +3,7 @@ from distutils.core import setup
 setup(
     name='fndetector',
     version='1.0',
-    packages=['fndetector'],
+    packages=['fndetector', 'fndetector.detectors'],
     url='',
     license='MIT',
     author='Michał Zezyk',
