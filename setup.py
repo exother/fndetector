@@ -3,7 +3,12 @@ from distutils.core import setup
 setup(
     name='fndetector',
     version='1.0',
-    packages=['fndetector', 'fndetector.detectors', 'fndetector.resources'],
+    packages=['fndetector', 'fndetector.detectors'],
+    package_data = {
+    	"fndetector.resources": [
+    		"domain_database.csv",
+    	],
+    },
     url='',
     license='MIT',
     author='Michał Zezyk',

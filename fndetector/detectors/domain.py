@@ -1,6 +1,7 @@
 import csv
 from urllib.parse import urlparse
 import numpy as np
+from pkg_resources import resource_filename
 
 class DomainDetector:
     def __init__(self, url):
@@ -13,6 +14,7 @@ class DomainDetector:
 
     def check(self):
         domain_database = {}
+        database_path = os.path.abspath(resource_filename('fndetector.data', 'domain_database.csv'))
         with open('resources/domain_database.csv', newline='') as csvfile:
             dbreader = csv.reader(csvfile, delimiter=',')
             for row in dbreader:
