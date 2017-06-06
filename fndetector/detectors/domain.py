@@ -2,6 +2,7 @@ import csv
 from urllib.parse import urlparse
 import numpy as np
 from pkg_resources import resource_filename
+import os
 
 class DomainDetector:
     def __init__(self, url):
